@@ -1,0 +1,67 @@
+<div class="contanier">
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap">
+        <title>Get In Touch </title>
+    </head>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: fantasy;
+        }
+    
+        h2 {
+          text-align: center;
+        }
+       
+
+            .btn-primary.hover-color-change {
+                background-color: #000000; 
+                color: #fff;
+                transition: background-color 0.3s ease; 
+            }
+
+            .btn-primary.hover-color-change:hover {
+                background-color: #0884ff; 
+            }
+
+      </style>
+    <body>
+        <div class="container d-flex justify-content-center align-items-center" style="height: 100vh;">
+            <div class="col-md-7 col-lg-10">
+            <h2>Enter Your Information</h2>
+            <form action="/Contact" method="post">
+                {% csrf_token %}
+             <div class="row g-3">
+                <div class="col-sm-6">
+                    <label for="firstName" class="form-label">First Name</label>
+                    <input type="text" class="form-control" id="firstName" name="firstName" required>
+                </div>
+                <div class="col-sm-6">
+                    <label for="lastName" class="form-label">Last Name</label>
+                    <input type="text" class="form-control" id="lastName" name="lastName" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="address" class="form-label">Text</label>
+                    <textarea type="text" class="form-control" id="text" name="Text" cols="10" rows="5" required> </textarea> 
+                </div>
+                <div class="text-center mt-5">
+                        <button type="submit" class="btn btn-primary hover-color-change">Submit</button>
+                 </div> 
+            </form>
+        </div>
+    </body>
+    </html> 
+</div>
