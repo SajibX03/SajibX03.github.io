@@ -78,13 +78,7 @@ WSGI_APPLICATION = 'Portfolio.wsgi.application'
 
 # To use Neon with Django, you have to create a Project on Neon and specify the project connection settings in your settings.py in the same way as for standalone Postgres.
 
-DATABASES = {POSTGRES_URL="postgres://default:9nvRFT6KdNXj@ep-noisy-breeze-a4mc84d1-pooler.us-east-1.postgres.vercel-storage.com:5432/verceldb"
-POSTGRES_PRISMA_URL="postgres://default:9nvRFT6KdNXj@ep-noisy-breeze-a4mc84d1-pooler.us-east-1.postgres.vercel-storage.com:5432/verceldb?pgbouncer=true&connect_timeout=15"
-POSTGRES_URL_NON_POOLING="postgres://default:9nvRFT6KdNXj@ep-noisy-breeze-a4mc84d1.us-east-1.postgres.vercel-storage.com:5432/verceldb"
-POSTGRES_USER="default"
-POSTGRES_HOST="ep-noisy-breeze-a4mc84d1-pooler.us-east-1.postgres.vercel-storage.com"
-POSTGRES_PASSWORD="9nvRFT6KdNXj"
-POSTGRES_DATABASE="verceldb"}
+DATABASES = {}
 
 
 # Password validation
